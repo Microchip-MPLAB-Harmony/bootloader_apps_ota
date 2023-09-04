@@ -1,12 +1,14 @@
 package:
   format-version: "1.0.0"
-  name: "replaceme"
+  name: "bootloader_apps_ota"
+  version: "v3.0.0"
   type: "application"
-  status: "beta"
-  required: false
-  version: "1.0.0"
+  status: "production"
+  required: true
 
   dependencies:
-    - name: "csp"
+    - name: "bootloader"
       type: "package"
       version: "dev"
+
+
