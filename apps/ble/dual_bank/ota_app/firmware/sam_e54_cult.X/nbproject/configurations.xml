@@ -8,10 +8,24 @@
         <logicalFolder name="sam_e54_cult"
                        displayName="sam_e54_cult"
                        projectFiles="true">
-          <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
-            <itemPath>../src/config/sam_e54_cult/bootloader/bootloader_common.h</itemPath>
-            <itemPath>../src/config/sam_e54_cult/bootloader/bootloader_ota.h</itemPath>
-            <itemPath>../src/config/sam_e54_cult/bootloader/ota_service_control_block.h</itemPath>
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/bsp/bsp.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="driver" displayName="driver" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/driver/driver.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/driver/driver_common.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="osal" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/osal/osal_impl_basic.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/osal/osal.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="ota_service" displayName="ota_service" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service_file_handler.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service_control_block.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_config.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service_transport.h</itemPath>
           </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clock" displayName="clock" projectFiles="true">
@@ -38,13 +52,44 @@
             <logicalFolder name="port" displayName="port" projectFiles="true">
               <itemPath>../src/config/sam_e54_cult/peripheral/port/plib_port.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
+              <logicalFolder name="usart" displayName="usart" projectFiles="true">
+                <itemPath>../src/config/sam_e54_cult/peripheral/sercom/usart/plib_sercom7_usart.h</itemPath>
+                <itemPath>../src/config/sam_e54_cult/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
+                <itemPath>../src/config/sam_e54_cult/peripheral/sercom/usart/plib_sercom1_usart.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="systick" displayName="systick" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/peripheral/systick/plib_systick.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="rnbd" displayName="rnbd" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/rnbd/rnbd_interface.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="system" displayName="system" projectFiles="true">
+            <logicalFolder name="cache" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/system/cache/sys_cache.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="debug" displayName="debug" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/system/debug/sys_debug.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="int" displayName="int" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/system/int/sys_int_mapping.h</itemPath>
+              <itemPath>../src/config/sam_e54_cult/system/int/sys_int.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/sam_e54_cult/system/system.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/system/system_module.h</itemPath>
+            <itemPath>../src/config/sam_e54_cult/system/system_common.h</itemPath>
           </logicalFolder>
           <itemPath>../src/config/sam_e54_cult/device.h</itemPath>
           <itemPath>../src/config/sam_e54_cult/toolchain_specifics.h</itemPath>
-          <itemPath>../src/config/sam_e54_cult/interrupts.h</itemPath>
           <itemPath>../src/config/sam_e54_cult/definitions.h</itemPath>
           <itemPath>../src/config/sam_e54_cult/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_e54_cult/interrupts.h</itemPath>
           <itemPath>../src/config/sam_e54_cult/device_cache.h</itemPath>
+          <itemPath>../src/config/sam_e54_cult/sys_tasks.h</itemPath>
+          <itemPath>../src/config/sam_e54_cult/user.h</itemPath>
+          <itemPath>../src/config/sam_e54_cult/configuration.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -52,108 +97,108 @@
                        displayName="ATSAME54P20A_DFP"
                        projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/oscctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/mclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/hmatrixb.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/supc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/freqm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/cmcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/evsys.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/adc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/usb.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/pukcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dsu.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/tcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/eic.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/port.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/can.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/hmatrixb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ramecc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ccl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sercom.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pm.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/qspi.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/pac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/can.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/trng.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/nvmctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/freqm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/eic.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/pdec.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dsu.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rtc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ccl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sdhc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rstc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/aes.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/tc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ramecc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/oscctrl.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/i2s.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/port.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/icm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sercom.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/fuses.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sdhc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/cmcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/tc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/mclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pcc.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom3.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom7.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/can1.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/gmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sdhc0.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/icm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/usb.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/freqm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/mclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/osc32kctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/fuses.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/evsys.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/supc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc2.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc0.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/cmcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc4.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/trng.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom4.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom0.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/oscctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/qspi.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/eic.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc1.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc3.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc7.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ramecc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom5.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ac.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom1.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/i2s.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/nvmctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/gclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/adc1.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pdec.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom5.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc3.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc4.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ccl.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc0.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dsu.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc2.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc6.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/port.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/i2s.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/icm.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom2.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/rstc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/hmatrix.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom6.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ramecc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc4.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/adc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/nvmctrl.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/can0.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sdhc1.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/osc32kctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/gmac.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/rtc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/adc0.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ccl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/port.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/trng.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc3.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/can1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom3.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom7.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/qspi.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc5.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/adc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sdhc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc2.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/freqm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pdec.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/can0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom4.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/cmcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc6.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sdhc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc2.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/oscctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/fuses.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/mclk.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/pio/same54p20a.h</itemPath>
@@ -164,21 +209,25 @@
           <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
             <logicalFolder name="Core" displayName="Core" projectFiles="true">
               <logicalFolder name="Include" displayName="Include" projectFiles="true">
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
+      <logicalFolder name="rnbd" displayName="rnbd" projectFiles="true">
+        <itemPath>../src/rnbd/rnbd.h</itemPath>
+      </logicalFolder>
+      <itemPath>../src/app_same54.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -198,9 +247,13 @@
         <logicalFolder name="sam_e54_cult"
                        displayName="sam_e54_cult"
                        projectFiles="true">
-          <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
-            <itemPath>../src/config/sam_e54_cult/bootloader/bootloader_common.c</itemPath>
-            <itemPath>../src/config/sam_e54_cult/bootloader/bootloader_ota.c</itemPath>
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/bsp/bsp.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="ota_service" displayName="ota_service" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service_file_handler.c</itemPath>
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service.c</itemPath>
+            <itemPath>../src/config/sam_e54_cult/ota_service/ota_service_transport.c</itemPath>
           </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clock" displayName="clock" projectFiles="true">
@@ -227,26 +280,50 @@
             <logicalFolder name="port" displayName="port" projectFiles="true">
               <itemPath>../src/config/sam_e54_cult/peripheral/port/plib_port.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
+              <logicalFolder name="usart" displayName="usart" projectFiles="true">
+                <itemPath>../src/config/sam_e54_cult/peripheral/sercom/usart/plib_sercom7_usart.c</itemPath>
+                <itemPath>../src/config/sam_e54_cult/peripheral/sercom/usart/plib_sercom1_usart.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="systick" displayName="systick" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/peripheral/systick/plib_systick.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="rnbd" displayName="rnbd" projectFiles="true">
+            <itemPath>../src/config/sam_e54_cult/rnbd/rnbd_interface.c</itemPath>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/sam_e54_cult/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
-          <itemPath>../src/config/sam_e54_cult/interrupts.c</itemPath>
-          <itemPath>../src/config/sam_e54_cult/startup_xc32.c</itemPath>
+          <logicalFolder name="system" displayName="system" projectFiles="true">
+            <logicalFolder name="cache" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/system/cache/sys_cache.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="int" displayName="int" projectFiles="true">
+              <itemPath>../src/config/sam_e54_cult/system/int/src/sys_int.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
           <itemPath>../src/config/sam_e54_cult/exceptions.c</itemPath>
-          <itemPath>../src/config/sam_e54_cult/libc_syscalls.c</itemPath>
           <itemPath>../src/config/sam_e54_cult/initialization.c</itemPath>
+          <itemPath>../src/config/sam_e54_cult/interrupts.c</itemPath>
+          <itemPath>../src/config/sam_e54_cult/libc_syscalls.c</itemPath>
+          <itemPath>../src/config/sam_e54_cult/startup_xc32.c</itemPath>
+          <itemPath>../src/config/sam_e54_cult/tasks.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/main.c</itemPath>
+      <logicalFolder name="rnbd" displayName="rnbd" projectFiles="true">
+        <itemPath>../src/rnbd/rnbd.c</itemPath>
+      </logicalFolder>
       <itemPath>../src/config/sam_e54_cult/pin_configurations.csv</itemPath>
+      <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app_same54.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>ota_bootloader_sam_e54_cult.mc3</itemPath>
+      <itemPath>ota_app_sam_e54_cult.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -260,7 +337,7 @@
         <targetDevice>ATSAME54P20A</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>EdbgTool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
@@ -279,21 +356,6 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../ota_app/firmware/sam_e54_cult.X"
-                        CT="1"
-                        CN="sam_e54_cult"
-                        AC="true"
-                        BL="true"
-                        WD="../../../ota_app/firmware/sam_e54_cult.X"
-                        BC="${MAKE}  -f Makefile CONF=sam_e54_cult"
-                        DBC="${MAKE}  -f Makefile CONF=sam_e54_cult TYPE_IMAGE=DEBUG_RUN"
-                        CC="rm -rf &quot;build/sam_e54_cult&quot; &quot;dist/sam_e54_cult&quot;"
-                        OP="dist/sam_e54_cult/production/sam_e54_cult.X.production.hex"
-                        DOP="dist/sam_e54_cult/debug/sam_e54_cult.X.debug.elf"
-                        FL="dist/sam_e54_cult/production/sam_e54_cult.X.production.hex"
-                        PD="dist/sam_e54_cult/production/sam_e54_cult.X.production.elf"
-                        DD="dist/sam_e54_cult/debug/sam_e54_cult.X.debug.elf">
-          </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
@@ -306,7 +368,7 @@
         <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>true</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep>${MP_CC_DIR}/xc32-objcopy --change-address 0x80000 ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.hex ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}_inactive_bank.hex</makeCustomizationPostStep>
+        <makeCustomizationPostStep>${MP_CC_DIR}/xc32-objcopy -I ihex -O binary ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.hex ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.bin</makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -314,6 +376,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -325,7 +388,7 @@
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
         <property key="make-warnings-into-errors" value="true"/>
-        <property key="optimization-level" value="-O2"/>
+        <property key="optimization-level" value="-O1"/>
         <property key="place-data-into-section" value="true"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
@@ -370,6 +433,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -397,7 +461,7 @@
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
         <property key="preprocessor-macros"
-                  value="RAM_LENGTH=0x40000;RAM_ORIGIN=0x20000000;ROM_LENGTH=0x2000"/>
+                  value="ROM_LENGTH=0xfe000;ROM_ORIGIN=0x2000"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -410,6 +474,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -438,6 +503,7 @@
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
       <C32Global>
+        <property key="appendMe" value=""/>
         <property key="common-include-directories" value=""/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
@@ -496,7 +562,7 @@
         <property key="programoptions.programuserotp" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
-        <property key="script.reset_delay" value="200000"/>
+        <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
@@ -507,21 +573,13 @@
       </EdbgTool>
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
         <property key="arm.use_vtor" value="false"/>
         <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
-        <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="2.000"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
@@ -547,12 +605,7 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/I51002/HarmonyProjects/ota/ota_bootloader/firmware/sam_e54_cult.X/debug/sam_e54_cult/sam_e54_cult_ptg"/>
-        <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.pgmentry.voltage" value="low"/>
-        <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
                   value="${memories.dataflash.default}"/>
@@ -561,13 +614,10 @@
         <property key="programoptions.preserveprogram.ranges" value=""/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
-        <property key="programoptions.program.otpconfig" value="false"/>
-        <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
-        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
-        <property key="script.reset_delay" value="200000"/>
+        <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
@@ -576,60 +626,6 @@
         <property key="voltagevalue" value=""/>
         <property key="x.erase.clearprot" value="true"/>
       </Tool>
-      <pkob4hybrid>
-        <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
-        <property key="communication.interface" value="swd"/>
-        <property key="communication.interface.jtag" value="2wire"/>
-        <property key="communication.speed" value="2.000"/>
-        <property key="debugoptions.debug-startup" value="Use system settings"/>
-        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
-        <property key="debugoptions.simultaneous.debug" value="false"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
-        <property key="event.recorder.enabled" value="false"/>
-        <property key="event.recorder.scvd.files" value=""/>
-        <property key="freeze.timers" value="false"/>
-        <property key="lastid" value=""/>
-        <property key="memories.aux" value="false"/>
-        <property key="memories.bootflash" value="true"/>
-        <property key="memories.configurationmemory" value="true"/>
-        <property key="memories.configurationmemory2" value="true"/>
-        <property key="memories.dataflash" value="true"/>
-        <property key="memories.eeprom" value="true"/>
-        <property key="memories.exclude.configurationmemory" value="true"/>
-        <property key="memories.flashdata" value="true"/>
-        <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
-        <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges" value="0-fffff"/>
-        <property key="programoptions.donoteraseauxmem" value="false"/>
-        <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.pgmentry.voltage" value="low"/>
-        <property key="programoptions.pgmspeed" value="Med"/>
-        <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
-        <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges" value=""/>
-        <property key="programoptions.preserveprogram.ranges" value=""/>
-        <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveuserid" value="false"/>
-        <property key="programoptions.program.otpconfig" value="false"/>
-        <property key="programoptions.programcalmem" value="false"/>
-        <property key="programoptions.programuserotp" value="false"/>
-        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
-        <property key="x.erase.clearprot" value="true"/>
-      </pkob4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>
