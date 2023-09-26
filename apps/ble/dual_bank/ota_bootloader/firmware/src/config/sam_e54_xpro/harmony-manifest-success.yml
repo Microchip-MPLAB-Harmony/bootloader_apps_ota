@@ -4,17 +4,17 @@
 
 
 project: ota_bootloader
-creation_date: 2023-09-26T22:26:16.889+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2023-11-17T16:17:21.867+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.3.7
 mcc_core_version: v5.5.7
-mplabx_version: v6.10        # if MPLAB X plugin only
+mplabx_version: v6.15        # if MPLAB X plugin only
 harmony_version: v1.3.2
-compiler: XC32 (v4.30) 
+compiler: XC32 (v4.30)
 
 modules:
-    - {name: "csp", version: "v3.18.0-rc.1-5-g4428872"}
-    - {name: "dev_packs", version: "v3.18.0-rc.1-2-g1e1918d"}
-    - {name: "bootloader", version: "v3.6.0-6-gb221c54"}
+    - {name: "csp", version: "v3.18.0-2-g32bc453"}
+    - {name: "dev_packs", version: "v3.18.0"}
+    - {name: "bootloader", version: "v3.6.0-22-g1a27c94"}
 

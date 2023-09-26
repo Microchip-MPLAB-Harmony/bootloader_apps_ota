@@ -5052,12 +5052,16 @@
          <hash>a104fa7e27e69ef01af2f984de4aa8c434e56204b44d42e195b32a602b8253cc</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_e54_cult\bootloader\bootloader_interrupt.h</file>
+         <hash>3a31927e23ee5036963e2b1947f313dcb77825d8fceca1611d77d15d0497db5a</hash>
+      </entry>
+      <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\component\hmatrixb.h</file>
          <hash>c0645f7dd8da46c6bd7043fa7013cf50cabdd0019417df9897f1f2156c840d35</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e54_cult\bootloader\bootloader_common.h</file>
-         <hash>004062c46a29530dd0486292a78b8a710921503cd269412b3f4c35876d310e73</hash>
+         <hash>90a54d3b78f0ecb92c0ff6c81ac58f44f53ac0ceb55d99260d15a931f54733f9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e54_cult\initialization.c</file>
@@ -5093,7 +5097,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e54_cult\bootloader\bootloader_common.c</file>
-         <hash>4764aceea294e71fbbacd7fdc3e0dac3ce10a24cca06231c4d135ecd85d8e024</hash>
+         <hash>6a6c85f7ad5f5378ddc2e3a3c40e43984572084cd17930619151336835b1dbfb</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e54_cult\driver\sst26\src\drv_sst26_local.h</file>
