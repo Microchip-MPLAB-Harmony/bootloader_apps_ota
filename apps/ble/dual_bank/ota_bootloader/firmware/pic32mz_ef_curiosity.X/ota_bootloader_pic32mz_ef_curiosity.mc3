@@ -1,0 +1,763 @@
+<config configName="pic32mz_ef_curiosity" projectName="ota_bootloader_pic32mz_ef_curiosity" configVersion="1.1" device="PIC32MZ2048EFM144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.7">
+   <usedPackages class="java.util.ArrayList"/>
+   <usedClasses class="java.util.TreeMap">
+      <entry>
+         <string>core</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>dfp</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>nvm</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
+         <string>ota_bootloader</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+   </usedClasses>
+   <usedLibraries class="java.util.ArrayList">
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.2"/>
+   </usedLibraries>
+   <tokenMap class="java.util.TreeMap">
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
+  &lt;UserData dnOrder=&quot;0&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;130&quot; canvasWidth=&quot;557&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
+      &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;core&quot; x=&quot;30&quot; y=&quot;60&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;dfp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;nvm&quot; x=&quot;107&quot; y=&quot;119&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;ota_bootloader&quot; x=&quot;253&quot; y=&quot;105&quot;/&gt;
+      &lt;/ElementPositions&gt;
+    &lt;/ComponentGraph&gt;
+  &lt;/UserData&gt;
+&lt;/UserData&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="ADD_LINKER_FILE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;ADD_LINKER_FILE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="CoreMainFile"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;CoreMainFile&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_167_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_167_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_167_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_167_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="EVIC_167_INTERRUPT_HANDLER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;EVIC_167_INTERRUPT_HANDLER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;FLASH_CONTROL_Handler&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLASH_CONTROL_INTERRUPT_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLASH_CONTROL_INTERRUPT_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;nvm&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLASH_CONTROL_INTERRUPT_ENABLE_UPDATE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLASH_CONTROL_INTERRUPT_ENABLE_UPDATE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLASH_CONTROL_INTERRUPT_HANDLER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLASH_CONTROL_INTERRUPT_HANDLER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;nvm&quot; value=&quot;FLASH_CONTROL_Handler&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="FLASH_CONTROL_INTERRUPT_HANDLER_LOCK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;FLASH_CONTROL_INTERRUPT_HANDLER_LOCK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;nvm&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="IOLOCK_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;IOLOCK_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="LINKER_SCRIPT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;LINKER_SCRIPT&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="MAIN_C"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;MAIN_C&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PMDLOCK_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PMDLOCK_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="XC32_LINKER_PREPROC_MARCOS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;XC32_LINKER_PREPROC_MARCOS&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="dfp" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="!@#harmonyAttachmentState"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot;&gt;
+    &lt;Attachments dnOrder=&quot;0&quot;&gt;
+      &lt;DirectCapability dnOrder=&quot;0&quot; id=&quot;NVM_MEMORY&quot;&gt;
+        &lt;Attributes dnOrder=&quot;0&quot;&gt;
+          &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;ota_bootloader&lt;/Value&gt;
+          &lt;/String&gt;
+          &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;btl_MEMORY_dependency_OTA&lt;/Value&gt;
+          &lt;/String&gt;
+        &lt;/Attributes&gt;
+      &lt;/DirectCapability&gt;
+    &lt;/Attachments&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="DRV_MEMORY_CONNECTED"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;DRV_MEMORY_CONNECTED&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="ERASE_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;ERASE_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="ERASE_BUFFER_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;ERASE_BUFFER_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="ERASE_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;ERASE_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="FLASH_ERASE_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;FLASH_ERASE_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="FLASH_PROGRAM_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;FLASH_PROGRAM_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="FLASH_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;FLASH_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="FLASH_START_ADDRESS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;FLASH_START_ADDRESS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="INTERRUPT_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;INTERRUPT_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="MEMORY_MEDIA_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;MEMORY_MEDIA_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="NVM_IEC_REG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;NVM_IEC_REG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="NVM_IEC_REG_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;NVM_IEC_REG_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="NVM_IFS_REG"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;NVM_IFS_REG&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="NVM_IFS_REG_VALUE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;NVM_IFS_REG_VALUE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="NVM_INSTANCE_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;NVM_INSTANCE_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="NVM_VECTOR_NUMBER"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;NVM_VECTOR_NUMBER&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="START_ADDRESS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;START_ADDRESS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="nvm" name="WRITE_API_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;nvm&gt;
+  &lt;nvm dnOrder=&quot;0&quot; id=&quot;WRITE_API_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/nvm&gt;
+&lt;/nvm&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="!@#harmonyAttachmentState"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot;&gt;
+    &lt;Attachments dnOrder=&quot;0&quot;&gt;
+      &lt;DirectDependency dnOrder=&quot;0&quot; id=&quot;btl_MEMORY_dependency_OTA&quot;&gt;
+        &lt;Attributes dnOrder=&quot;0&quot;&gt;
+          &lt;String dnOrder=&quot;0&quot; id=&quot;targetComponentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;nvm&lt;/Value&gt;
+          &lt;/String&gt;
+          &lt;String dnOrder=&quot;1&quot; id=&quot;targetAttachmentID&quot;&gt;
+            &lt;Value dnOrder=&quot;0&quot;&gt;NVM_MEMORY&lt;/Value&gt;
+          &lt;/String&gt;
+        &lt;/Attributes&gt;
+      &lt;/DirectDependency&gt;
+    &lt;/Attachments&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_APP_JUMP_ADDRESS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_APP_JUMP_ADDRESS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_DUAL_BANK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_DUAL_BANK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RAM_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RAM_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RAM_START"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RAM_START&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_DELAY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_DELAY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_STACK_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_STACK_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_MSG_QTY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_MSG_QTY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_OPT_NONE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_OPT_NONE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_OPT_NO_TLS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_OPT_NO_TLS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_OPT_SAVE_FP"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_OPT_SAVE_FP&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_OPT_STK_CHK"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_OPT_STK_CHK&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_OPT_STK_CLR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_OPT_STK_CLR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_PRIORITY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_PRIORITY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_TASK_TIME_QUANTA"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_TASK_TIME_QUANTA&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_RTOS_USE_DELAY"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_RTOS_USE_DELAY&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;16384&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_START"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_START&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_TRIGGER_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_TRIGGER_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;false&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_TRIGGER_LEN"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_TRIGGER_LEN&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="BTL_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;BTL_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="DRIVER_USED"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;DRIVER_USED&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;NVM&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="MEM_USED"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;MEM_USED&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;NVM&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="NUM_OF_APP_IMAGE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;NUM_OF_APP_IMAGE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="NVM_MEM_USED"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;NVM_MEM_USED&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="OTA_BOOTLOADER_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;OTA_BOOTLOADER_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ota_bootloader" name="OTA_MEM_ERASE_ENABLE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ota_bootloader&gt;
+  &lt;ota_bootloader dnOrder=&quot;0&quot; id=&quot;OTA_MEM_ERASE_ENABLE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;ota_bootloader&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/ota_bootloader&gt;
+&lt;/ota_bootloader&gt;
+</value>
+      </entry>
+   </tokenMap>
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\evic\plib_evic.c</file>
+         <hash>c0fb57b116260e4be1477d8af40b368e18309e37291757721d8774bfa9058e0a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\btl.ld</file>
+         <hash>75cf357bca6c96c511cd460b612a9bcc8fd303665ecdda296d6e299c4db212e1</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\device.h</file>
+         <hash>10ec93c43a7b158a129ae05bd8f4a59ff5bcf3d0f3f062fdd64c374bc2d42099</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\nvm\plib_nvm.c</file>
+         <hash>f7f451d82e6bcb446221d4fec7abc2aba921a8475500ddb9642d2b813655ca1b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\exceptions.c</file>
+         <hash>ad7c8afe7fa8ac3a356ad4a7b779a2bc7c6d8e9aaf9d3cd7315a93a29f03978a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\initialization.c</file>
+         <hash>adfc322d06d0948feccb3a89a9c87c52bd42f375ded3ec8290c18487ad4c0689</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\bootloader\bootloader_common.h</file>
+         <hash>271c9c02aa9755280ec9cc1ab8ff16010259997507ca54c22082e56ed4580469</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\interrupts.c</file>
+         <hash>15293fcc2450a1caa2944513770b31b5b0fb71918c31ec9a9c9b497b679b6f5f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\clk\plib_clk.h</file>
+         <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\bootloader\ota_service_control_block.h</file>
+         <hash>3f4635da359b4eafa7d1d613be852e206c136c5353caed47ae3ec62c1d1c9b0e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\clk\plib_clk.c</file>
+         <hash>d5b0adc1e0bca26d02a10b8d0062d08989ff7a0c136100dcd9ddcba44becc683</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\gpio\plib_gpio.c</file>
+         <hash>911cac299d2374e3025bd4f0fe2f436c37d1db36802adefdfac91ed212261746</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\bootloader\bootloader_common.c</file>
+         <hash>fe014e0abd61a14173db64b7ddb0877345d7ad8a35e28ce9f656f6e5c57ae177</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\toolchain_specifics.h</file>
+         <hash>fd2fc7bbe60706409cc0c0a525825c0194f6f71adc0a89e6310041f06dc2f645</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\interrupts.h</file>
+         <hash>759cce8ff415eadadd85a74232a5023d73e8859a4556ef4beb93c2cfd4b8d8ef</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\stdio\xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\bootloader\bootloader_ota.h</file>
+         <hash>5db207f2dd014d0cd962673f14db369ef76fa19bb286858d7e8a40c70ef3f6e5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\nvm\plib_nvm.h</file>
+         <hash>13d7fbaabb735790e7ab8f30b71e499aead17b1972c5fffbab0f9913c287d988</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\bootloader\bootloader_ota.c</file>
+         <hash>40238d971c6697e18602c2e8fd311be82045b39ac487409d4dd0a9e5cc1c04f9</hash>
+      </entry>
+      <entry>
+         <file>..\src\main.c</file>
+         <hash>9a4c65dfeb30f8822371347031b7601f98c3c793f91a3a1bd5b9ad87f937a578</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\gpio\plib_gpio.h</file>
+         <hash>df6d121e8464522528a5a7b03eae4bc3436ee5ed9c9af4ad80563bdecd26dc8e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\peripheral\evic\plib_evic.h</file>
+         <hash>55a4d4a3985da6e88a9548a0a29a4f8d08e077348dbad6cd6ddce5fe40d01a33</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\definitions.h</file>
+         <hash>0e922ae0eafd5670d110c087e1ae1d67d0717a5f6056c8fac4b210b924c6fdf8</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
+</config>
