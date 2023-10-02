@@ -2,5 +2,6 @@
 <Package name="bootloader_apps_ota">
     <Dependencies>
         <Dependency name="bootloader" version="v3.7.0"/>
+        <Dependency name="wireless_system_services" version="v3.0.0"/>
     </Dependencies>
 </Package>

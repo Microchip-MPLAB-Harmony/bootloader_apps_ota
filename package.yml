@@ -10,5 +10,7 @@ package:
     - name: "bootloader"
       type: "package"
       version: "dev"
-
+    - name: "wireless_system_services"
+      type: "package"
+      version: "dev"
 
