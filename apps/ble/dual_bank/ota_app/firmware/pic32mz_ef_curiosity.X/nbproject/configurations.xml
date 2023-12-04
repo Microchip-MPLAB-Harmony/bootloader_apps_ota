@@ -25,7 +25,7 @@
             <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service.h</itemPath>
             <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_file_handler.h</itemPath>
             <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_control_block.h</itemPath>
-            <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_transport.h</itemPath>
+            <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_transport_ble.h</itemPath>
           </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
@@ -96,7 +96,7 @@
           <logicalFolder name="ota_service" displayName="ota_service" projectFiles="true">
             <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service.c</itemPath>
             <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_file_handler.c</itemPath>
-            <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_transport.c</itemPath>
+            <itemPath>../src/config/pic32mz_ef_curiosity/ota_service/ota_service_transport_ble.c</itemPath>
           </logicalFolder>
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
@@ -198,6 +198,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -254,6 +255,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -293,6 +295,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>

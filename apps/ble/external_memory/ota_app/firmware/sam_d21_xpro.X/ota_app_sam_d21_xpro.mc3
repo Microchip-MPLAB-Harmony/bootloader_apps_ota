@@ -9251,16 +9251,8 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>..\src\config\sam_d21_xpro\ota_service\ota_service_transport.c</file>
-         <hash>ead1785a681bb2adfb3ed555186610aea11920940bb2da5c032a0fab8e45c788</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
          <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d21_xpro\ota_service\ota_service_transport.h</file>
-         <hash>828b6a4276f69cd8acc5b55363083d75ae86b3e00c5c9094dac7d37e47449622</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
@@ -9328,7 +9320,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d21_xpro\ota_service\ota_service.c</file>
-         <hash>5815cca6513a26f89a37a4f6955dd61a445c06da58babf582201a4e08874f903</hash>
+         <hash>44f5b29a185896e34176d189083900d18fb747db8982b8c5595551eaa33c52c0</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d21_xpro\system\debug\sys_debug.h</file>
@@ -9435,6 +9427,10 @@
          <hash>5cb21f9aaac63012c30d9eb9e34ab1e613e4c9f515cd7516cedbc9701ff6a16d</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_d21_xpro\ota_service\ota_service_transport_ble.c</file>
+         <hash>a3ed75403ef9e5f352ac377d09b570a0225567d79fb6f9454191c1dca3cac16d</hash>
+      </entry>
+      <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
          <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
       </entry>
@@ -9521,6 +9517,10 @@
       <entry>
          <file>..\src\config\sam_d21_xpro\ota_service\ota_service_control_block.h</file>
          <hash>934a98cf29bd21ccb4ec4a8157ed1c65546fb50ff7c6e22c7ef9c22a3a6ed4e7</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d21_xpro\ota_service\ota_service_transport_ble.h</file>
+         <hash>311a7cf7b387661f64d02f529a207030ee7000adca9558ccfb7dda0e95f28487</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD21J18A_DFP\instance\mtb.h</file>

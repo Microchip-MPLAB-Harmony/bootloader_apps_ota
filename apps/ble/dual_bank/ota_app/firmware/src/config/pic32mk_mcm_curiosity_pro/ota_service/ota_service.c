@@ -47,7 +47,7 @@
 #include<stdbool.h>
 #include<string.h>
 #include "ota_service.h"
-#include "ota_service_transport.h"
+#include "ota_service_transport_ble.h"
 #include "ota_service_file_handler.h"
 #include "rnbd/rnbd_interface.h"
 #include "rnbd/rnbd.h"

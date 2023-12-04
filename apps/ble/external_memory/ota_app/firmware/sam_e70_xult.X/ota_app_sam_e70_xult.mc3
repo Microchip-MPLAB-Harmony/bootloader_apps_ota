@@ -6677,7 +6677,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\ota_service\ota_service.c</file>
-         <hash>5815cca6513a26f89a37a4f6955dd61a445c06da58babf582201a4e08874f903</hash>
+         <hash>44f5b29a185896e34176d189083900d18fb747db8982b8c5595551eaa33c52c0</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\spi0.h</file>
@@ -6812,10 +6812,6 @@
          <hash>dd97bc5f55d34bb059e4fdd6925b587e9f98c5c45faa3b98466a9542d26499a1</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_e70_xult\ota_service\ota_service_transport.h</file>
-         <hash>828b6a4276f69cd8acc5b55363083d75ae86b3e00c5c9094dac7d37e47449622</hash>
-      </entry>
-      <entry>
          <file>..\src\config\sam_e70_xult\system\int\sys_int.h</file>
          <hash>dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274</hash>
       </entry>
@@ -6854,10 +6850,6 @@
       <entry>
          <file>..\src\config\sam_e70_xult\system\cache\sys_cache.c</file>
          <hash>5f8c30e8077b915a4c4ff0515354b2877dc74c3236f307bdc1132307269fbf86</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_e70_xult\ota_service\ota_service_transport.c</file>
-         <hash>ead1785a681bb2adfb3ed555186610aea11920940bb2da5c032a0fab8e45c788</hash>
       </entry>
       <entry>
          <file>..\src\app.c</file>
@@ -7132,12 +7124,20 @@
          <hash>342420c5047b20e2e4bd030c5c5aaeebd9b714fdda47c8452b29ca764e36fdc7</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_e70_xult\ota_service\ota_service_transport_ble.c</file>
+         <hash>a3ed75403ef9e5f352ac377d09b570a0225567d79fb6f9454191c1dca3cac16d</hash>
+      </entry>
+      <entry>
          <file>..\src\config\sam_e70_xult\system\system_common.h</file>
          <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\rtc.h</file>
          <hash>f485984e812eb2f88448484128343a00562ccc3c4a33d2b1aaf8e24edd0282bc</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_e70_xult\ota_service\ota_service_transport_ble.h</file>
+         <hash>311a7cf7b387661f64d02f529a207030ee7000adca9558ccfb7dda0e95f28487</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult\bsp\bsp.h</file>

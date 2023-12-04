@@ -8056,10 +8056,6 @@
          <hash>d739d16f7a414cf41a74d96baf93618e503b5b2d9b47d94564232a3ab8125451</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_e54_cult\ota_service\ota_service_transport.h</file>
-         <hash>828b6a4276f69cd8acc5b55363083d75ae86b3e00c5c9094dac7d37e47449622</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
          <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
       </entry>
@@ -8118,10 +8114,6 @@
       <entry>
          <file>..\src\config\sam_e54_cult\user.h</file>
          <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_e54_cult\ota_service\ota_service_transport.c</file>
-         <hash>ead1785a681bb2adfb3ed555186610aea11920940bb2da5c032a0fab8e45c788</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e54_cult\peripheral\clock\plib_clock.c</file>
@@ -8424,6 +8416,10 @@
          <hash>2732b3edc7b584761a0fbc992479a6ba1d58b570b7e920b3cc6fda5b6d54603e</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_e54_cult\ota_service\ota_service_transport_ble.c</file>
+         <hash>a3ed75403ef9e5f352ac377d09b570a0225567d79fb6f9454191c1dca3cac16d</hash>
+      </entry>
+      <entry>
          <file>..\src\config\sam_e54_cult\system\system_common.h</file>
          <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
       </entry>
@@ -8438,6 +8434,10 @@
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\rstc.h</file>
          <hash>4fd3866a085d4c8175ca2ac114541fef189773edcaedd66792f381b9a2309abc</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_e54_cult\ota_service\ota_service_transport_ble.h</file>
+         <hash>311a7cf7b387661f64d02f529a207030ee7000adca9558ccfb7dda0e95f28487</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\sercom0.h</file>
@@ -8497,7 +8497,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e54_cult\ota_service\ota_service.c</file>
-         <hash>5815cca6513a26f89a37a4f6955dd61a445c06da58babf582201a4e08874f903</hash>
+         <hash>44f5b29a185896e34176d189083900d18fb747db8982b8c5595551eaa33c52c0</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\pcc.h</file>

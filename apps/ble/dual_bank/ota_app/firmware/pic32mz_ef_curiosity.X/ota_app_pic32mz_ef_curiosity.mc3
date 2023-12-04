@@ -7909,7 +7909,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\definitions.h</file>
-         <hash>bed92216ff3d9190b1891444abe06074c7421832d7bac2ed05eb2bcb534b1621</hash>
+         <hash>4e9b2cd6a21d45dab62e7307bd2806a366751f306a74ce38318784240ca84d1d</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\ota_service\ota_service_control_block.h</file>
@@ -7928,20 +7928,16 @@
          <hash>2c878ab7ff41ae56b5c0c3c94929ad66eb87b8660bf9a439177d049e8ad8f8c8</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_curiosity\system\system_common.h</file>
-         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
-      </entry>
-      <entry>
          <file>..\src\config\pic32mz_ef_curiosity\peripheral\uart\plib_uart6.c</file>
          <hash>3fdf59f3ece6f6663ac0f3e454eaf923939d80c166c6c36c6bf30ee9323d241b</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_curiosity\initialization.c</file>
-         <hash>9d5e8d0f72e417a6e8127d7d14c7e1827897836b7425a8a2e53fcda47049e05a</hash>
+         <file>..\src\config\pic32mz_ef_curiosity\system\system_common.h</file>
+         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mz_ef_curiosity\ota_service\ota_service_transport.h</file>
-         <hash>828b6a4276f69cd8acc5b55363083d75ae86b3e00c5c9094dac7d37e47449622</hash>
+         <file>..\src\config\pic32mz_ef_curiosity\initialization.c</file>
+         <hash>b4bd13bc95c94e49825aac728f647e6f1774a3e0daff7f041262326b50705ec9</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\peripheral\uart\plib_uart6.h</file>
@@ -7949,7 +7945,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\ota_service\ota_service.c</file>
-         <hash>5815cca6513a26f89a37a4f6955dd61a445c06da58babf582201a4e08874f903</hash>
+         <hash>44f5b29a185896e34176d189083900d18fb747db8982b8c5595551eaa33c52c0</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\peripheral\evic\plib_evic.h</file>
@@ -7974,10 +7970,6 @@
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\peripheral\clk\plib_clk.h</file>
          <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mz_ef_curiosity\ota_service\ota_service_transport.c</file>
-         <hash>ead1785a681bb2adfb3ed555186610aea11920940bb2da5c032a0fab8e45c788</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\peripheral\coretimer\plib_coretimer.h</file>
@@ -8038,6 +8030,14 @@
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\peripheral\uart\plib_uart1.h</file>
          <hash>f6725b015f87425815e91b2b86b6a5baedef19d163f51616fabe72a43da79aad</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\ota_service\ota_service_transport_ble.c</file>
+         <hash>a3ed75403ef9e5f352ac377d09b570a0225567d79fb6f9454191c1dca3cac16d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32mz_ef_curiosity\ota_service\ota_service_transport_ble.h</file>
+         <hash>311a7cf7b387661f64d02f529a207030ee7000adca9558ccfb7dda0e95f28487</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mz_ef_curiosity\system\debug\sys_debug.h</file>

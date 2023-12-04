@@ -7293,6 +7293,10 @@
          <hash>72f451f9d1ce9289f3793f9f019151f6986c7633e95c34f6b6dda894c9ff4225</hash>
       </entry>
       <entry>
+         <file>..\src\config\pic32mk_mcm_curiosity_pro\ota_service\ota_service_transport_ble.h</file>
+         <hash>311a7cf7b387661f64d02f529a207030ee7000adca9558ccfb7dda0e95f28487</hash>
+      </entry>
+      <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\system\int\sys_int_mapping.h</file>
          <hash>a2dcf05575becc98aa212af1d220eda07487bd645d82c4d7a980aa3a22384cf3</hash>
       </entry>
@@ -7309,6 +7313,10 @@
          <hash>e92c139daf6e44808b716185f3fe8bf1e3662a299163f15295c768aedd031e58</hash>
       </entry>
       <entry>
+         <file>..\src\config\pic32mk_mcm_curiosity_pro\ota_service\ota_service_transport_ble.c</file>
+         <hash>a3ed75403ef9e5f352ac377d09b570a0225567d79fb6f9454191c1dca3cac16d</hash>
+      </entry>
+      <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\stdio\xc32_monitor.c</file>
          <hash>9b94a2c69e3e47de57f2b184c6225491b16521d57a80d89ee84745d94030b597</hash>
       </entry>
@@ -7322,7 +7330,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\ota_service\ota_service.c</file>
-         <hash>5815cca6513a26f89a37a4f6955dd61a445c06da58babf582201a4e08874f903</hash>
+         <hash>44f5b29a185896e34176d189083900d18fb747db8982b8c5595551eaa33c52c0</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\system\int\sys_int.h</file>
@@ -7409,20 +7417,12 @@
          <hash>f08df88895a9577b06d4cc457fbaf2410f0288891c2debc12f34f2f935da3352</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32mk_mcm_curiosity_pro\ota_service\ota_service_transport.h</file>
-         <hash>828b6a4276f69cd8acc5b55363083d75ae86b3e00c5c9094dac7d37e47449622</hash>
-      </entry>
-      <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\peripheral\gpio\plib_gpio.c</file>
          <hash>2cdc8bd27427c0b8672cc87f7efcb923519e5817eb53edaa859b5f7eecbc49f5</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\ota_service\ota_config.h</file>
          <hash>37f5e203a5a6d7cd44bc9e23b46c395cf84489a0185c0c7a39367897ec6df65d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\pic32mk_mcm_curiosity_pro\ota_service\ota_service_transport.c</file>
-         <hash>ead1785a681bb2adfb3ed555186610aea11920940bb2da5c032a0fab8e45c788</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32mk_mcm_curiosity_pro\tasks.c</file>

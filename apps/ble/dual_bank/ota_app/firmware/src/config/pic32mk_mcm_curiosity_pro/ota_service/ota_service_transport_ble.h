@@ -2,7 +2,7 @@
   OTA service Transport Header File
 
   File Name:
-    ota_service_transport.h
+    ota_service_transport_ble.h
 
   Summary:
     This file contains OTA service Transport definitions and functions.

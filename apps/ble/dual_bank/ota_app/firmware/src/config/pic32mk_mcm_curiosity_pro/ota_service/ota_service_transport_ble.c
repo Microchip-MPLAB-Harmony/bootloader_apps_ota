@@ -2,7 +2,7 @@
   OTA service Transport Source File
 
   File Name:
-    ota_service_transport.c
+    ota_service_transport_ble.c
 
   Summary:
     This file contains source code for OTA Transport service.
@@ -45,7 +45,7 @@
 #include<string.h>
 #include "ota_service.h"
 #include "rnbd/rnbd.h"
-#include "ota_service_transport.h"
+#include "ota_service_transport_ble.h"
 #include "rnbd/rnbd_interface.h"
 #include "rnbd/rnbd.h"
 static char otaBuff[10] = {'%', 'O', 'T', 'A', '_', 'D', 'A', 'T', 'A', ','};

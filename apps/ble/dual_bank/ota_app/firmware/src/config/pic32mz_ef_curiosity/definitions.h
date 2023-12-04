@@ -54,13 +54,13 @@
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/evic/plib_evic.h"
-#include "bsp/bsp.h"
 #include "ota_service/ota_service.h"
+#include "bsp/bsp.h"
+#include "peripheral/uart/plib_uart6.h"
 #include "system/int/sys_int.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
 #include "peripheral/nvm/plib_nvm.h"
-#include "peripheral/uart/plib_uart6.h"
 #include "app_mips.h"
 
 

@@ -8027,6 +8027,10 @@
          <hash>bc6fa321b0be542d074e4564065b7fd69f52556486ac3d892d315b51c434f9ec</hash>
       </entry>
       <entry>
+         <file>..\src\config\sam_e54_xpro\ota_service\ota_service_transport_ble.h</file>
+         <hash>311a7cf7b387661f64d02f529a207030ee7000adca9558ccfb7dda0e95f28487</hash>
+      </entry>
+      <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\component\pm.h</file>
          <hash>33c94f2dac44d36c08ed4b14bf51ed7f5afb7cedc61ab602db794c43c60dfe51</hash>
       </entry>
@@ -8113,6 +8117,10 @@
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\component\sdhc.h</file>
          <hash>fd25d7d2616dd93ff624b8b29bfff75454d60834b0ff6e802d0fa6e52f5786f3</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_e54_xpro\ota_service\ota_service_transport_ble.c</file>
+         <hash>a3ed75403ef9e5f352ac377d09b570a0225567d79fb6f9454191c1dca3cac16d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\component\mclk.h</file>
@@ -8431,10 +8439,6 @@
          <hash>b212aa1eb1be0df28c273dad0e1373c745692be947a27dbfdaed874c3b2642c0</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_e54_xpro\ota_service\ota_service_transport.c</file>
-         <hash>ead1785a681bb2adfb3ed555186610aea11920940bb2da5c032a0fab8e45c788</hash>
-      </entry>
-      <entry>
          <file>..\src\config\sam_e54_xpro\ota_service\ota_service.h</file>
          <hash>50db1e7e5c03a307cfe47d7818cd827498040f233c921ac337611e9d095a7cc7</hash>
       </entry>
@@ -8455,10 +8459,6 @@
          <hash>7c1bbd8c9e60cae12250cfa7e436564167b0243e2136de96e545900830dbfc55</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_e54_xpro\ota_service\ota_service_transport.h</file>
-         <hash>828b6a4276f69cd8acc5b55363083d75ae86b3e00c5c9094dac7d37e47449622</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\instance\sercom6.h</file>
          <hash>e15d2db5ec8c4364bf6bfe529e1ae9550c8d08438551a51ff443131f39f9a6b0</hash>
       </entry>
@@ -8472,7 +8472,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e54_xpro\ota_service\ota_service.c</file>
-         <hash>5815cca6513a26f89a37a4f6955dd61a445c06da58babf582201a4e08874f903</hash>
+         <hash>44f5b29a185896e34176d189083900d18fb747db8982b8c5595551eaa33c52c0</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME54P20A_DFP\component\can.h</file>
