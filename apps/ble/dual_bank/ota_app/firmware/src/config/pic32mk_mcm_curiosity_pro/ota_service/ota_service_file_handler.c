@@ -75,6 +75,8 @@ static OTA_FILE_HANDLER_DATA otaFileHandlerData =
 // *****************************************************************************
 // *****************************************************************************
 
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.6 */
 /* Function to Generate CRC by reading the firmware programmed into internal flash */
 static uint32_t OTA_SERVICE_FH_CRCGenerate(uint32_t start_addr, uint32_t size)
 {
@@ -110,6 +112,7 @@ static uint32_t OTA_SERVICE_FH_CRCGenerate(uint32_t start_addr, uint32_t size)
 
     return crc;
 }
+/* MISRAC 2012 deviation block end */
 
 
 
@@ -123,9 +126,9 @@ static uint32_t OTA_SERVICE_FH_CRCGenerate(uint32_t start_addr, uint32_t size)
 void OTA_SERVICE_FH_TriggerReset(void)
 {
     /* Perform system unlock sequence */
-    SYSKEY = 0x00000000;
-    SYSKEY = 0xAA996655;
-    SYSKEY = 0x556699AA;
+    SYSKEY = 0x00000000U;
+    SYSKEY = 0xAA996655U;
+    SYSKEY = 0x556699AAU;
 
     RSWRSTSET = _RSWRST_SWRST_MASK;
     (void)RSWRST;

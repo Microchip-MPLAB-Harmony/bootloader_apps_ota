@@ -49,18 +49,18 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include "peripheral/coretimer/plib_coretimer.h"
 #include "peripheral/uart/plib_uart3.h"
+#include "peripheral/coretimer/plib_coretimer.h"
 #include "bsp/bsp.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/evic/plib_evic.h"
 #include "ota_service/ota_service.h"
 #include "peripheral/uart/plib_uart6.h"
+#include "peripheral/nvm/plib_nvm.h"
 #include "system/int/sys_int.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "peripheral/nvm/plib_nvm.h"
 #include "app_mips.h"
 
 
