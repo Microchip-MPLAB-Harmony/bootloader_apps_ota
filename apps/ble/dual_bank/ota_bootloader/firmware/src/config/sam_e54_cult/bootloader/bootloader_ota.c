@@ -100,13 +100,15 @@ typedef struct
 
 static uint8_t CACHE_ALIGN controlBlockBuffer[OTA_CONTROL_BLOCK_BUFFER_SIZE];
 static uint32_t ctrlBlkSize = OTA_CONTROL_BLOCK_BUFFER_SIZE;
-
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 7.2 */
 static BTL_DATA btlData =
 {
     .state              = BTL_STATE_INIT,
     .appJumpAddress     = APP_START_ADDRESS,
     .controlBlock       = (OTA_CONTROL_BLOCK *)controlBlockBuffer,
 };
+/* MISRAC 2012 deviation block end */
 
 // *****************************************************************************
 // *****************************************************************************
