@@ -138,13 +138,15 @@ typedef struct
 static uint8_t CACHE_ALIGN controlBlockBuffer[OTA_CONTROL_BLOCK_BUFFER_SIZE];
 static uint8_t CACHE_ALIGN flash_data[DATA_SIZE];
 static uint32_t ctrlBlkSize = OTA_CONTROL_BLOCK_BUFFER_SIZE;
-
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 7.2 */
 static BTL_DATA btlData =
 {
     .state              = BTL_STATE_INIT,
     .appJumpAddress     = APP_START_ADDRESS,
     .controlBlock       = (OTA_CONTROL_BLOCK *)controlBlockBuffer,
 };
+/* MISRAC 2012 deviation block end */
 
 // *****************************************************************************
 // *****************************************************************************
@@ -223,7 +225,7 @@ static bool bootloader_OTA_CtrlBlkRead(OTA_CONTROL_BLOCK *controlBlock, uint32_t
 
         appMetaDataAddress  = ((otaMemoryStart + otaMemorySize) - BUFFER_SIZE(blockSize, ctrlBlkSize));
 
-        for (count = 0; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
+        for (count = 0U; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
         {
             if (DRV_AT25_Read(btlData.handle, ptrBuffer, OTA_CONTROL_BLOCK_PAGE_SIZE, appMetaDataAddress) != true)
             {
@@ -261,7 +263,7 @@ static bool bootloader_OTA_CtrlBlkWrite(OTA_CONTROL_BLOCK *controlBlock, uint32_
         appMetaDataAddress  = ((otaMemoryStart + otaMemorySize) - BUFFER_SIZE(blockSize, ctrlBlkSize));
 
 
-        for (count = 0; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
+        for (count = 0U; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
         {
             if (DRV_AT25_PageWrite(btlData.handle, ptrBuffer, appMetaDataAddress) != true)
             {

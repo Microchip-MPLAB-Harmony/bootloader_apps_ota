@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_d21_xpro"
-                       displayName="sam_d21_xpro"
-                       projectFiles="true">
+        <logicalFolder name="sam_d21_xpro" displayName="sam_d21_xpro" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/sam_d21_xpro/bootloader/bootloader_ota.h</itemPath>
             <itemPath>../src/config/sam_d21_xpro/bootloader/ota_service_control_block.h</itemPath>
@@ -85,9 +81,7 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
-        <logicalFolder name="ATSAMD21J18A_DFP"
-                       displayName="ATSAMD21J18A_DFP"
-                       projectFiles="true">
+        <logicalFolder name="ATSAMD21J18A_DFP" displayName="ATSAMD21J18A_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/ATSAMD21J18A_DFP/component/sysctrl.h</itemPath>
             <itemPath>../src/packs/ATSAMD21J18A_DFP/component/wdt.h</itemPath>
@@ -179,24 +173,16 @@
       </logicalFolder>
       <itemPath>../src/app_samd21.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_d21_xpro"
-                       displayName="sam_d21_xpro"
-                       projectFiles="true">
+        <logicalFolder name="sam_d21_xpro" displayName="sam_d21_xpro" projectFiles="true">
           <itemPath>../src/config/sam_d21_xpro/ATSAMD21J18A.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_d21_xpro"
-                       displayName="sam_d21_xpro"
-                       projectFiles="true">
+        <logicalFolder name="sam_d21_xpro" displayName="sam_d21_xpro" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/sam_d21_xpro/bootloader/bootloader_ota.c</itemPath>
             <itemPath>../src/config/sam_d21_xpro/bootloader/bootloader_common.c</itemPath>
@@ -254,9 +240,7 @@
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/config/sam_d21_xpro/pin_configurations.csv</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>ota_bootloader_sam_d21_xpro.mc3</itemPath>
     </logicalFolder>
@@ -267,11 +251,11 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>ATSAMD21J18A</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -288,24 +272,11 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../ota_app/firmware/sam_d21_xpro.X"
-                        CT="1"
-                        CN="sam_d21_xpro"
-                        AC="true"
-                        BL="true"
-                        WD="../../../ota_app/firmware/sam_d21_xpro.X"
-                        BC="${MAKE}  -f Makefile CONF=sam_d21_xpro"
-                        DBC="${MAKE}  -f Makefile CONF=sam_d21_xpro TYPE_IMAGE=DEBUG_RUN"
-                        CC="rm -rf &quot;build/sam_d21_xpro&quot; &quot;dist/sam_d21_xpro&quot;"
-                        OP="dist/sam_d21_xpro/production/sam_d21_xpro.X.production.hex"
-                        DOP="dist/sam_d21_xpro/debug/sam_d21_xpro.X.debug.elf"
-                        FL="dist/sam_d21_xpro/production/sam_d21_xpro.X.production.hex"
-                        PD="dist/sam_d21_xpro/production/sam_d21_xpro.X.production.elf"
-                        DD="dist/sam_d21_xpro/debug/sam_d21_xpro.X.debug.elf">
+          <makeArtifact PL="../../../ota_app/firmware/sam_d21_xpro.X" CT="1" CN="sam_d21_xpro" AC="true" BL="true" WD="../../../ota_app/firmware/sam_d21_xpro.X" BC="${MAKE}  -f Makefile CONF=sam_d21_xpro" DBC="${MAKE}  -f Makefile CONF=sam_d21_xpro TYPE_IMAGE=DEBUG_RUN" CC="rm -rf &quot;build/sam_d21_xpro&quot; &quot;dist/sam_d21_xpro&quot;" OP="dist/sam_d21_xpro/production/sam_d21_xpro.X.production.hex" DOP="dist/sam_d21_xpro/debug/sam_d21_xpro.X.debug.elf" FL="dist/sam_d21_xpro/production/sam_d21_xpro.X.production.hex" PD="dist/sam_d21_xpro/production/sam_d21_xpro.X.production.elf" DD="dist/sam_d21_xpro/debug/sam_d21_xpro.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -313,9 +284,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -329,8 +300,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_d21_xpro;../src/packs/ATSAMD21J18A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_d21_xpro;../src/packs/ATSAMD21J18A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -407,8 +377,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros"
-                  value="RAM_LENGTH=0x8000;RAM_ORIGIN=0x20000000;ROM_LENGTH=0x2000"/>
+        <property key="preprocessor-macros" value="RAM_LENGTH=0x8000;RAM_ORIGIN=0x20000000;ROM_LENGTH=0x2000"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -430,8 +399,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_d21_xpro;../src/packs/ATSAMD21J18A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_d21_xpro;../src/packs/ATSAMD21J18A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
