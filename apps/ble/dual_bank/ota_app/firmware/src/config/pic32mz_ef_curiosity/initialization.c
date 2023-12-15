@@ -215,9 +215,9 @@ void SYS_Initialize ( void* data )
 	UART1_Initialize();
 
 	BSP_Initialize();
-	UART6_Initialize();
-
     NVM_Initialize();
+
+	UART6_Initialize();
 
 
 
