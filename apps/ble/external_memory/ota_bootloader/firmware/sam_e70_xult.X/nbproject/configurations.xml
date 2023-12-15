@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_e70_xult"
-                       displayName="sam_e70_xult"
-                       projectFiles="true">
+        <logicalFolder name="sam_e70_xult" displayName="sam_e70_xult" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/sam_e70_xult/bootloader/ota_service_control_block.h</itemPath>
             <itemPath>../src/config/sam_e70_xult/bootloader/bootloader_ota.h</itemPath>
@@ -76,9 +72,7 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
-        <logicalFolder name="ATSAME70Q21B_DFP"
-                       displayName="ATSAME70Q21B_DFP"
-                       projectFiles="true">
+        <logicalFolder name="ATSAME70Q21B_DFP" displayName="ATSAME70Q21B_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/ATSAME70Q21B_DFP/component/trng.h</itemPath>
             <itemPath>../src/packs/ATSAME70Q21B_DFP/component/chipid.h</itemPath>
@@ -201,24 +195,16 @@
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_e70_xult"
-                       displayName="sam_e70_xult"
-                       projectFiles="true">
+        <logicalFolder name="sam_e70_xult" displayName="sam_e70_xult" projectFiles="true">
           <itemPath>../src/config/sam_e70_xult/ATSAME70Q21B.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_e70_xult"
-                       displayName="sam_e70_xult"
-                       projectFiles="true">
+        <logicalFolder name="sam_e70_xult" displayName="sam_e70_xult" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/sam_e70_xult/bootloader/bootloader_ota.c</itemPath>
             <itemPath>../src/config/sam_e70_xult/bootloader/bootloader_common.c</itemPath>
@@ -271,9 +257,7 @@
       <itemPath>../src/config/sam_e70_xult/pin_configurations.csv</itemPath>
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>ota_bootloader_sam_e70_xult.mc3</itemPath>
     </logicalFolder>
@@ -284,15 +268,15 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>ATSAME70Q21B</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME70_DFP" vendor="Microchip" version="4.9.129"/>
+        <pack name="SAME70_DFP" vendor="Microchip" version="4.10.248"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
@@ -305,24 +289,11 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../ota_app/firmware/sam_e70_xult.X"
-                        CT="1"
-                        CN="sam_e70_xult"
-                        AC="true"
-                        BL="true"
-                        WD="../../../ota_app/firmware/sam_e70_xult.X"
-                        BC="${MAKE}  -f Makefile CONF=sam_e70_xult"
-                        DBC="${MAKE}  -f Makefile CONF=sam_e70_xult TYPE_IMAGE=DEBUG_RUN"
-                        CC="rm -rf &quot;build/sam_e70_xult&quot; &quot;dist/sam_e70_xult&quot;"
-                        OP="dist/sam_e70_xult/production/sam_e70_xult.X.production.hex"
-                        DOP="dist/sam_e70_xult/debug/sam_e70_xult.X.debug.elf"
-                        FL="dist/sam_e70_xult/production/sam_e70_xult.X.production.hex"
-                        PD="dist/sam_e70_xult/production/sam_e70_xult.X.production.elf"
-                        DD="dist/sam_e70_xult/debug/sam_e70_xult.X.debug.elf">
+          <makeArtifact PL="../../../ota_app/firmware/sam_e70_xult.X" CT="1" CN="sam_e70_xult" AC="true" BL="true" WD="../../../ota_app/firmware/sam_e70_xult.X" BC="${MAKE}  -f Makefile CONF=sam_e70_xult" DBC="${MAKE}  -f Makefile CONF=sam_e70_xult TYPE_IMAGE=DEBUG_RUN" CC="rm -rf &quot;build/sam_e70_xult&quot; &quot;dist/sam_e70_xult&quot;" OP="dist/sam_e70_xult/production/sam_e70_xult.X.production.hex" DOP="dist/sam_e70_xult/debug/sam_e70_xult.X.debug.elf" FL="dist/sam_e70_xult/production/sam_e70_xult.X.production.hex" PD="dist/sam_e70_xult/production/sam_e70_xult.X.production.elf" DD="dist/sam_e70_xult/debug/sam_e70_xult.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -330,9 +301,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -346,8 +317,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -424,8 +394,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros"
-                  value="RAM_LENGTH=0x60000;RAM_ORIGIN=0x20400000;ROM_LENGTH=0x2000"/>
+        <property key="preprocessor-macros" value="RAM_LENGTH=0x60000;RAM_ORIGIN=0x20400000;ROM_LENGTH=0x2000"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -447,8 +416,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_e70_xult;../src/packs/ATSAME70Q21B_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
