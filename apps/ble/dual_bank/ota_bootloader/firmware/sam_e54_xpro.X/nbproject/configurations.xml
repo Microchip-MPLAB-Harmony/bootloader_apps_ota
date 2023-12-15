@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_e54_xpro"
-                       displayName="sam_e54_xpro"
-                       projectFiles="true">
+        <logicalFolder name="sam_e54_xpro" displayName="sam_e54_xpro" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/bootloader/bootloader_ota.h</itemPath>
             <itemPath>../src/config/sam_e54_xpro/bootloader/ota_service_control_block.h</itemPath>
@@ -49,9 +45,7 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
-        <logicalFolder name="ATSAME54P20A_DFP"
-                       displayName="ATSAME54P20A_DFP"
-                       projectFiles="true">
+        <logicalFolder name="ATSAME54P20A_DFP" displayName="ATSAME54P20A_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/trng.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
@@ -181,24 +175,16 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_e54_xpro"
-                       displayName="sam_e54_xpro"
-                       projectFiles="true">
+        <logicalFolder name="sam_e54_xpro" displayName="sam_e54_xpro" projectFiles="true">
           <itemPath>../src/config/sam_e54_xpro/ATSAME54P20A.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_e54_xpro"
-                       displayName="sam_e54_xpro"
-                       projectFiles="true">
+        <logicalFolder name="sam_e54_xpro" displayName="sam_e54_xpro" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/bootloader/bootloader_ota.c</itemPath>
             <itemPath>../src/config/sam_e54_xpro/bootloader/bootloader_common.c</itemPath>
@@ -243,9 +229,7 @@
       <itemPath>../src/config/sam_e54_xpro/pin_configurations.csv</itemPath>
       <itemPath>../src/app_same54.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>ota_bootloader_sam_e54_xpro.mc3</itemPath>
     </logicalFolder>
@@ -259,11 +243,11 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>ATSAME54P20A</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -280,24 +264,11 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../ota_app/firmware/sam_e54_xpro.X"
-                        CT="1"
-                        CN="sam_e54_xpro"
-                        AC="true"
-                        BL="true"
-                        WD="../../../ota_app/firmware/sam_e54_xpro.X"
-                        BC="${MAKE}  -f Makefile CONF=sam_e54_xpro"
-                        DBC="${MAKE}  -f Makefile CONF=sam_e54_xpro TYPE_IMAGE=DEBUG_RUN"
-                        CC="rm -rf &quot;build/sam_e54_xpro&quot; &quot;dist/sam_e54_xpro&quot;"
-                        OP="dist/sam_e54_xpro/production/sam_e54_xpro.X.production.hex"
-                        DOP="dist/sam_e54_xpro/debug/sam_e54_xpro.X.debug.elf"
-                        FL="dist/sam_e54_xpro/production/sam_e54_xpro.X.production.hex"
-                        PD="dist/sam_e54_xpro/production/sam_e54_xpro.X.production.elf"
-                        DD="dist/sam_e54_xpro/debug/sam_e54_xpro.X.debug.elf">
+          <makeArtifact PL="../../../ota_app/firmware/sam_e54_xpro.X" CT="1" CN="sam_e54_xpro" AC="true" BL="true" WD="../../../ota_app/firmware/sam_e54_xpro.X" BC="${MAKE}  -f Makefile CONF=sam_e54_xpro" DBC="${MAKE}  -f Makefile CONF=sam_e54_xpro TYPE_IMAGE=DEBUG_RUN" CC="rm -rf &quot;build/sam_e54_xpro&quot; &quot;dist/sam_e54_xpro&quot;" OP="dist/sam_e54_xpro/production/sam_e54_xpro.X.production.hex" DOP="dist/sam_e54_xpro/debug/sam_e54_xpro.X.debug.elf" FL="dist/sam_e54_xpro/production/sam_e54_xpro.X.production.hex" PD="dist/sam_e54_xpro/production/sam_e54_xpro.X.production.elf" DD="dist/sam_e54_xpro/debug/sam_e54_xpro.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -305,7 +276,7 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>true</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep>${MP_CC_DIR}/xc32-objcopy --change-address 0x80000 ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.hex ${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}_inactive_bank.hex</makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
@@ -321,8 +292,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e54_xpro;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_e54_xpro;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -399,8 +369,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros"
-                  value="RAM_LENGTH=0x40000;RAM_ORIGIN=0x20000000;ROM_LENGTH=0x2000"/>
+        <property key="preprocessor-macros" value="RAM_LENGTH=0x40000;RAM_ORIGIN=0x20000000;ROM_LENGTH=0x2000"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -422,8 +391,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_e54_xpro;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_e54_xpro;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
