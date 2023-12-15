@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32mz_ef_curiosity"
-                       displayName="pic32mz_ef_curiosity"
-                       projectFiles="true">
+        <logicalFolder name="pic32mz_ef_curiosity" displayName="pic32mz_ef_curiosity" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/pic32mz_ef_curiosity/bootloader/ota_service_control_block.h</itemPath>
             <itemPath>../src/config/pic32mz_ef_curiosity/bootloader/bootloader_ota.h</itemPath>
@@ -34,18 +30,12 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <itemPath>../src/config/pic32mz_ef_curiosity/btl.ld</itemPath>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32mz_ef_curiosity"
-                       displayName="pic32mz_ef_curiosity"
-                       projectFiles="true">
+        <logicalFolder name="pic32mz_ef_curiosity" displayName="pic32mz_ef_curiosity" projectFiles="true">
           <logicalFolder name="bootloader" displayName="bootloader" projectFiles="true">
             <itemPath>../src/config/pic32mz_ef_curiosity/bootloader/bootloader_ota.c</itemPath>
             <itemPath>../src/config/pic32mz_ef_curiosity/bootloader/bootloader_common.c</itemPath>
@@ -74,9 +64,7 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>ota_bootloader_pic32mz_ef_curiosity.mc3</itemPath>
     </logicalFolder>
@@ -87,11 +75,11 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32MZ2048EFM144</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -107,24 +95,11 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../ota_app/firmware/pic32mz_ef_curiosity.X"
-                        CT="1"
-                        CN="pic32mz_ef_curiosity"
-                        AC="true"
-                        BL="true"
-                        WD="../../../ota_app/firmware/pic32mz_ef_curiosity.X"
-                        BC="${MAKE}  -f Makefile CONF=pic32mz_ef_curiosity"
-                        DBC="${MAKE}  -f Makefile CONF=pic32mz_ef_curiosity TYPE_IMAGE=DEBUG_RUN"
-                        CC="rm -rf &quot;build/pic32mz_ef_curiosity&quot; &quot;dist/pic32mz_ef_curiosity&quot;"
-                        OP="dist/pic32mz_ef_curiosity/production/pic32mz_ef_curiosity.X.production.hex"
-                        DOP="dist/pic32mz_ef_curiosity/debug/pic32mz_ef_curiosity.X.debug.elf"
-                        FL="dist/pic32mz_ef_curiosity/production/pic32mz_ef_curiosity.X.production.hex"
-                        PD="dist/pic32mz_ef_curiosity/production/pic32mz_ef_curiosity.X.production.elf"
-                        DD="dist/pic32mz_ef_curiosity/debug/pic32mz_ef_curiosity.X.debug.elf">
+          <makeArtifact PL="../../../ota_app/firmware/pic32mz_ef_curiosity.X" CT="1" CN="pic32mz_ef_curiosity" AC="true" BL="true" WD="../../../ota_app/firmware/pic32mz_ef_curiosity.X" BC="${MAKE}  -f Makefile CONF=pic32mz_ef_curiosity" DBC="${MAKE}  -f Makefile CONF=pic32mz_ef_curiosity TYPE_IMAGE=DEBUG_RUN" CC="rm -rf &quot;build/pic32mz_ef_curiosity&quot; &quot;dist/pic32mz_ef_curiosity&quot;" OP="dist/pic32mz_ef_curiosity/production/pic32mz_ef_curiosity.X.production.hex" DOP="dist/pic32mz_ef_curiosity/debug/pic32mz_ef_curiosity.X.debug.elf" FL="dist/pic32mz_ef_curiosity/production/pic32mz_ef_curiosity.X.production.hex" PD="dist/pic32mz_ef_curiosity/production/pic32mz_ef_curiosity.X.production.elf" DD="dist/pic32mz_ef_curiosity/debug/pic32mz_ef_curiosity.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -132,9 +107,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -147,8 +122,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_ef_curiosity"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32mz_ef_curiosity"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -245,8 +219,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_ef_curiosity"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32mz_ef_curiosity"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
