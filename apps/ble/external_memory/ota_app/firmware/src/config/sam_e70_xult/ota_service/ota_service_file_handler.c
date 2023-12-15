@@ -160,7 +160,7 @@ bool OTA_SERVICE_FH_CtrlBlkRead(OTA_CONTROL_BLOCK *controlBlock, uint32_t length
 
         appMetaDataAddress  = ((otaMemoryStart + otaMemorySize) - BUFFER_SIZE(blockSize, ctrlBlkSize));
 
-        for (count = 0; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
+        for (count = 0U; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
         {
             if (DRV_SST26_Read(otaFileHandlerData.handle, ptrBuffer, OTA_CONTROL_BLOCK_PAGE_SIZE, appMetaDataAddress) != true)
             {
@@ -201,7 +201,7 @@ bool OTA_SERVICE_FH_CtrlBlkWrite(OTA_CONTROL_BLOCK *controlBlock, uint32_t lengt
 
         status = OTA_SERVICE_FH_WaitForXferComplete();
 
-        for (count = 0; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
+        for (count = 0U; count < length; count += OTA_CONTROL_BLOCK_PAGE_SIZE)
         {
             if (DRV_SST26_PageWrite(otaFileHandlerData.handle, ptrBuffer, appMetaDataAddress) != true)
             {
