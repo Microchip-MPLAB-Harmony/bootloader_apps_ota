@@ -4,13 +4,12 @@ package:
   version: "v3.0.0"
   type: "application"
   status: "production"
-  required: true
+  required: false
 
   dependencies:
     - name: "bootloader"
       type: "package"
-      version: "dev"
+      version: "v3.7.0"
     - name: "wireless_services"
       type: "package"
-      version: "dev"
-
+      version: "v1.0.0"
